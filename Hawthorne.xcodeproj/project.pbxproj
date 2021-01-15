@@ -1,0 +1,623 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F18794CB25B24B2C00CB3E85 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F18794CA25B24B2C00CB3E85 /* WebKit.framework */; };
+		F1B3686925A8D2F90075F082 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3686825A8D2F90075F082 /* AppDelegate.swift */; };
+		F1B3686B25A8D2F90075F082 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3686A25A8D2F90075F082 /* ViewController.swift */; };
+		F1B3686D25A8D2FA0075F082 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F1B3686C25A8D2FA0075F082 /* Assets.xcassets */; };
+		F1B3687025A8D2FA0075F082 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F1B3686E25A8D2FA0075F082 /* Main.storyboard */; };
+		F1B3687C25A8D2FA0075F082 /* HawthorneTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3687B25A8D2FA0075F082 /* HawthorneTests.swift */; };
+		F1B3688725A8D2FA0075F082 /* HawthorneUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3688625A8D2FA0075F082 /* HawthorneUITests.swift */; };
+		F1B368B625A8D6120075F082 /* MainWindowController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B368B525A8D6120075F082 /* MainWindowController.swift */; };
+		F1B3692525A90F310075F082 /* PageLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3692425A90F310075F082 /* PageLoader.swift */; };
+		F1B3693325A928100075F082 /* GeminiFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3693225A928100075F082 /* GeminiFormatter.swift */; };
+		F1B3693B25A92F3B0075F082 /* GeminiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = F1B3693A25A92F3B0075F082 /* GeminiResponse.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F1B3687825A8D2FA0075F082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B3685D25A8D2F90075F082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B3686425A8D2F90075F082;
+			remoteInfo = Hawthorne;
+		};
+		F1B3688325A8D2FA0075F082 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F1B3685D25A8D2F90075F082 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F1B3686425A8D2F90075F082;
+			remoteInfo = Hawthorne;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F18794CA25B24B2C00CB3E85 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		F1B3686525A8D2F90075F082 /* Hawthorne.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Hawthorne.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B3686825A8D2F90075F082 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F1B3686A25A8D2F90075F082 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F1B3686C25A8D2FA0075F082 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F1B3686F25A8D2FA0075F082 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F1B3687125A8D2FA0075F082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B3687225A8D2FA0075F082 /* Hawthorne.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Hawthorne.entitlements; sourceTree = "<group>"; };
+		F1B3687725A8D2FA0075F082 /* HawthorneTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawthorneTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B3687B25A8D2FA0075F082 /* HawthorneTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawthorneTests.swift; sourceTree = "<group>"; };
+		F1B3687D25A8D2FA0075F082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B3688225A8D2FA0075F082 /* HawthorneUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = HawthorneUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F1B3688625A8D2FA0075F082 /* HawthorneUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HawthorneUITests.swift; sourceTree = "<group>"; };
+		F1B3688825A8D2FA0075F082 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F1B368B525A8D6120075F082 /* MainWindowController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainWindowController.swift; sourceTree = "<group>"; };
+		F1B3692425A90F310075F082 /* PageLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PageLoader.swift; sourceTree = "<group>"; };
+		F1B3693225A928100075F082 /* GeminiFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiFormatter.swift; sourceTree = "<group>"; };
+		F1B3693A25A92F3B0075F082 /* GeminiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeminiResponse.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F1B3686225A8D2F90075F082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F18794CB25B24B2C00CB3E85 /* WebKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3687425A8D2FA0075F082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3687F25A8D2FA0075F082 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F18794C925B24B2C00CB3E85 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				F18794CA25B24B2C00CB3E85 /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F1B3685C25A8D2F90075F082 = {
+			isa = PBXGroup;
+			children = (
+				F1B3686725A8D2F90075F082 /* Hawthorne */,
+				F1B3687A25A8D2FA0075F082 /* HawthorneTests */,
+				F1B3688525A8D2FA0075F082 /* HawthorneUITests */,
+				F1B3686625A8D2F90075F082 /* Products */,
+				F18794C925B24B2C00CB3E85 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		F1B3686625A8D2F90075F082 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F1B3686525A8D2F90075F082 /* Hawthorne.app */,
+				F1B3687725A8D2FA0075F082 /* HawthorneTests.xctest */,
+				F1B3688225A8D2FA0075F082 /* HawthorneUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F1B3686725A8D2F90075F082 /* Hawthorne */ = {
+			isa = PBXGroup;
+			children = (
+				F1B3686825A8D2F90075F082 /* AppDelegate.swift */,
+				F1B3693225A928100075F082 /* GeminiFormatter.swift */,
+				F1B3693A25A92F3B0075F082 /* GeminiResponse.swift */,
+				F1B368B525A8D6120075F082 /* MainWindowController.swift */,
+				F1B3692425A90F310075F082 /* PageLoader.swift */,
+				F1B3686A25A8D2F90075F082 /* ViewController.swift */,
+				F1B3689725A8D3010075F082 /* Resources */,
+			);
+			path = Hawthorne;
+			sourceTree = "<group>";
+		};
+		F1B3687A25A8D2FA0075F082 /* HawthorneTests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B3687B25A8D2FA0075F082 /* HawthorneTests.swift */,
+				F1B3687D25A8D2FA0075F082 /* Info.plist */,
+			);
+			path = HawthorneTests;
+			sourceTree = "<group>";
+		};
+		F1B3688525A8D2FA0075F082 /* HawthorneUITests */ = {
+			isa = PBXGroup;
+			children = (
+				F1B3688625A8D2FA0075F082 /* HawthorneUITests.swift */,
+				F1B3688825A8D2FA0075F082 /* Info.plist */,
+			);
+			path = HawthorneUITests;
+			sourceTree = "<group>";
+		};
+		F1B3689725A8D3010075F082 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F1B3686C25A8D2FA0075F082 /* Assets.xcassets */,
+				F1B3686E25A8D2FA0075F082 /* Main.storyboard */,
+				F1B3687125A8D2FA0075F082 /* Info.plist */,
+				F1B3687225A8D2FA0075F082 /* Hawthorne.entitlements */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F1B3686425A8D2F90075F082 /* Hawthorne */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B3688B25A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "Hawthorne" */;
+			buildPhases = (
+				F1B3686125A8D2F90075F082 /* Sources */,
+				F1B3686225A8D2F90075F082 /* Frameworks */,
+				F1B3686325A8D2F90075F082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Hawthorne;
+			productName = Hawthorne;
+			productReference = F1B3686525A8D2F90075F082 /* Hawthorne.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F1B3687625A8D2FA0075F082 /* HawthorneTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B3688E25A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "HawthorneTests" */;
+			buildPhases = (
+				F1B3687325A8D2FA0075F082 /* Sources */,
+				F1B3687425A8D2FA0075F082 /* Frameworks */,
+				F1B3687525A8D2FA0075F082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B3687925A8D2FA0075F082 /* PBXTargetDependency */,
+			);
+			name = HawthorneTests;
+			productName = HawthorneTests;
+			productReference = F1B3687725A8D2FA0075F082 /* HawthorneTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F1B3688125A8D2FA0075F082 /* HawthorneUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F1B3689125A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "HawthorneUITests" */;
+			buildPhases = (
+				F1B3687E25A8D2FA0075F082 /* Sources */,
+				F1B3687F25A8D2FA0075F082 /* Frameworks */,
+				F1B3688025A8D2FA0075F082 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F1B3688425A8D2FA0075F082 /* PBXTargetDependency */,
+			);
+			name = HawthorneUITests;
+			productName = HawthorneUITests;
+			productReference = F1B3688225A8D2FA0075F082 /* HawthorneUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F1B3685D25A8D2F90075F082 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					F1B3686425A8D2F90075F082 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					F1B3687625A8D2FA0075F082 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F1B3686425A8D2F90075F082;
+					};
+					F1B3688125A8D2FA0075F082 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = F1B3686425A8D2F90075F082;
+					};
+				};
+			};
+			buildConfigurationList = F1B3686025A8D2F90075F082 /* Build configuration list for PBXProject "Hawthorne" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F1B3685C25A8D2F90075F082;
+			productRefGroup = F1B3686625A8D2F90075F082 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F1B3686425A8D2F90075F082 /* Hawthorne */,
+				F1B3687625A8D2FA0075F082 /* HawthorneTests */,
+				F1B3688125A8D2FA0075F082 /* HawthorneUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F1B3686325A8D2F90075F082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B3686D25A8D2FA0075F082 /* Assets.xcassets in Resources */,
+				F1B3687025A8D2FA0075F082 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3687525A8D2FA0075F082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3688025A8D2FA0075F082 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F1B3686125A8D2F90075F082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B3686B25A8D2F90075F082 /* ViewController.swift in Sources */,
+				F1B3693325A928100075F082 /* GeminiFormatter.swift in Sources */,
+				F1B3692525A90F310075F082 /* PageLoader.swift in Sources */,
+				F1B3693B25A92F3B0075F082 /* GeminiResponse.swift in Sources */,
+				F1B368B625A8D6120075F082 /* MainWindowController.swift in Sources */,
+				F1B3686925A8D2F90075F082 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3687325A8D2FA0075F082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B3687C25A8D2FA0075F082 /* HawthorneTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F1B3687E25A8D2FA0075F082 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F1B3688725A8D2FA0075F082 /* HawthorneUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F1B3687925A8D2FA0075F082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B3686425A8D2F90075F082 /* Hawthorne */;
+			targetProxy = F1B3687825A8D2FA0075F082 /* PBXContainerItemProxy */;
+		};
+		F1B3688425A8D2FA0075F082 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F1B3686425A8D2F90075F082 /* Hawthorne */;
+			targetProxy = F1B3688325A8D2FA0075F082 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F1B3686E25A8D2FA0075F082 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F1B3686F25A8D2FA0075F082 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		F1B3688925A8D2FA0075F082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F1B3688A25A8D2FA0075F082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+			};
+			name = Release;
+		};
+		F1B3688C25A8D2FA0075F082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hawthorne/Hawthorne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Hawthorne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.Hawthorne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		F1B3688D25A8D2FA0075F082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = Hawthorne/Hawthorne.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				ENABLE_HARDENED_RUNTIME = YES;
+				INFOPLIST_FILE = Hawthorne/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.Hawthorne;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		F1B3688F25A8D2FA0075F082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				INFOPLIST_FILE = HawthorneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.HawthorneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hawthorne.app/Contents/MacOS/Hawthorne";
+			};
+			name = Debug;
+		};
+		F1B3689025A8D2FA0075F082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				INFOPLIST_FILE = HawthorneTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.HawthorneTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Hawthorne.app/Contents/MacOS/Hawthorne";
+			};
+			name = Release;
+		};
+		F1B3689225A8D2FA0075F082 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				INFOPLIST_FILE = HawthorneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.HawthorneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hawthorne;
+			};
+			name = Debug;
+		};
+		F1B3689325A8D2FA0075F082 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = BKU5H4GUNQ;
+				INFOPLIST_FILE = HawthorneUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stevenf.HawthorneUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TEST_TARGET_NAME = Hawthorne;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F1B3686025A8D2F90075F082 /* Build configuration list for PBXProject "Hawthorne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B3688925A8D2FA0075F082 /* Debug */,
+				F1B3688A25A8D2FA0075F082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B3688B25A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "Hawthorne" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B3688C25A8D2FA0075F082 /* Debug */,
+				F1B3688D25A8D2FA0075F082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B3688E25A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "HawthorneTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B3688F25A8D2FA0075F082 /* Debug */,
+				F1B3689025A8D2FA0075F082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F1B3689125A8D2FA0075F082 /* Build configuration list for PBXNativeTarget "HawthorneUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F1B3689225A8D2FA0075F082 /* Debug */,
+				F1B3689325A8D2FA0075F082 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F1B3685D25A8D2F90075F082 /* Project object */;
+}
